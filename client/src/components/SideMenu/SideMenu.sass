@@ -1,0 +1,35 @@
+#about-me
+  .side-menu
+    display: none
+
+@media (min-width: 500px)
+  #about-me
+    position: relative
+
+    img
+      width: 5%
+      margin: 150px auto
+
+    .side-menu
+      display: block
+      position: absolute
+      right: 70px
+      bottom: 70px
+
+      .chevron-up, .chevron-down
+        font-size: 70px
+        color: #850001
+
+      li
+        line-height: 20px
+
+        a
+          text-transform: uppercase
+          letter-spacing: 0.5em
+          line-height: 10px
+          :hover
+            transform: scale(1.1)
+
+      hr
+        width: 20%
+        margin: 15px auto

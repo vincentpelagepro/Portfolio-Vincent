@@ -1,0 +1,128 @@
+#projects
+  background-color: #fbf9f9
+
+  .card-project
+    width: 90%
+    margin: auto
+    padding-bottom: 90px
+    position: relative
+
+    .previous
+      left: 0
+      transform: rotate(180deg)
+
+    .next
+      right: 0
+
+    .previous, .next
+      position: absolute
+      bottom: 20px
+      border: 2px solid #850001
+      border-radius: 50%
+      width: 50px
+      height: 50px
+      display: flex
+      justify-content: center
+      align-items: center
+      transition: all 0.2s ease-in-out
+      &:active
+        background-color: darken(#850001, 25%)
+        svg
+          fill: white
+
+      svg
+        width: 30px
+        height: 30px
+        fill: #850001
+
+    .image-wrapper
+      height: 299px
+      background-position: top center
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+
+    .project-details
+      border: 1px solid #dad1d1
+      border-bottom-left-radius: 5px
+      border-bottom-right-radius: 5px
+      background-color: white
+      padding: 30px 10px
+      text-align: center
+
+      h4
+        font-weight: bold
+        font-size: 16px
+        margin-bottom: 10px
+
+      p
+        line-height: 1.4
+        margin-bottom: 10px
+        font-size: 14px
+
+      ul
+        li
+          display: inline-block
+          border: 1px solid #dad1d1
+          margin: 5px
+          padding: 5px
+          border-radius: 5px
+          font-size: 14px
+
+      @media (min-width: 768px)
+        img
+          width: 10%
+
+        p
+          font-size: 16px
+
+
+  @media (min-width: 1024px)
+    .card-project
+      height: 400px
+      width: 75%
+
+      .next
+        right: -90px
+
+      .previous
+        left: -90px
+
+      .previous, .next
+        bottom: 55%
+        &:hover
+          cursor: pointer
+          background-color: #850001
+          svg
+            fill: white
+        &:active
+          background-color: darken(#850001, 25%)
+
+      .image-wrapper
+        display: inline-block
+        width: 40%
+        height: 100%
+        vertical-align: middle
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: top
+        border-top-left-radius: 5px
+        border-top-right-radius: 0px
+        border-bottom-left-radius: 5px
+
+      .project-details
+        display: inline-flex
+        width: 60%
+        height: 100%
+        vertical-align: middle
+        border-bottom-left-radius: 0px
+        border-top-right-radius: 5px
+        justify-content: center
+        align-items: center
+
+        h4
+          font-size: 18px
+
+        ul
+          li
+            padding: 10px 15px
+            font-size: 16px

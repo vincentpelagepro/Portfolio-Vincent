@@ -1,0 +1,48 @@
+#about-me
+  background-color: #fbf9f9
+  padding-bottom: 90px
+
+  .card-about-me
+    width: 75%
+    margin: auto
+    margin-bottom: 40px
+    border: 1px solid #dad1d1
+    border-radius: 10px
+    background-color: white
+    padding: 30px 30px
+    text-align: center
+
+    p
+      line-height: 1.8
+      margin-bottom: 10px
+      font-size: 14px
+      text-align: justify
+
+  a
+    text-align: center
+    margin: 0 auto
+    width: 70px
+    height: 70px
+    display: block
+    background-color: white
+    padding: 8px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    img
+      width: 60%
+      transition: all 0.5s ease-in-out
+      &:hover
+        transform: rotate(360deg)
+
+  @media (min-width: 768px)
+    .card-about-me
+      width: 60%
+      padding: 30px 40px
+
+      p
+        font-size: 16px
+
+  // @media (min-width: 1024px)

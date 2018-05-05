@@ -1,0 +1,70 @@
+#skills
+  // min-height: 100vh
+  height: auto
+  background-image: url('./assets/images/shattered-island.gif')
+
+  ul
+    column-count: 2
+    text-align: center
+    padding-bottom: 50px
+
+    li
+      padding-bottom: 40px
+
+    .hiding-skill
+      display: none
+
+    .circle
+      background-color: #fff
+      border-radius: 50px
+      height: 90px
+      width: 90px
+      margin: 0 auto
+      display: flex
+      align-items: center
+      justify-content: center
+      &:hover
+        transform: rotate(360deg)
+        transition: all 0.5s ease-in-out
+
+      img
+        width: 50px
+        border-radius: 50px
+
+    .skills-title
+      padding-bottom: 20px
+      display: block
+      color: white
+      letter-spacing: 0.2em
+
+@media (min-width: 768px)
+  #skills
+    ul
+      column-count: 3
+      width: 85%
+      margin: 0 auto
+
+      li
+        padding-bottom: 0px
+        margin-bottom: 40px
+
+      .hiding-skill
+        display: block
+
+      .skills-title
+        font-size: 20px
+        height: 70px
+
+      .circle
+        border-radius: 100px
+        height: 100px
+        width: 100px
+
+        img
+          width: 55px
+          border-radius: 50px
+
+@media (min-width: 1024px)
+  #skills
+    ul
+      width: 70%

@@ -1,0 +1,141 @@
+#header
+  // height: 100vh
+  background-image: url('./assets/images/shattered-island.gif')
+
+  .navbar
+    padding-top: 15px
+
+    .burger
+      display: inline-block
+      cursor: pointer
+      position: fixed
+      right: 10px
+
+    .bar1, .bar2, .bar3
+      width: 35px
+      height: 5px
+      background-color: white
+      margin: 6px 0
+      transition: 0.4s
+
+    .black-bar1, .black-bar2, .black-bar3
+      width: 35px
+      height: 5px
+      background-color: black
+      margin: 6px 0
+      transition: 0.4s
+
+    .changBar1
+      transform: rotate(-45deg) translate(-9px, 7px)
+
+    .changBar2
+      opacity: 0
+
+    .changBar3
+      transform: rotate(45deg) translate(-8px, -7px)
+
+  .listMenuClose
+    display: none
+
+  .listMenuOpen
+      padding-top: 50px
+      height: 608px
+
+  .introMenuOpen
+      display: none
+
+  ul
+    height: auto
+
+    li
+      height: 20%
+      display: flex
+      justify-content: center
+      flex-direction: column
+      text-align: center
+      color: white
+      text-transform: uppercase
+      letter-spacing: 0.2em
+
+  .intro
+    text-align: center
+    color: white
+    font-size: 20px
+    padding-top: 250px
+    letter-spacing: 0.5em
+    font-family: 'Lato', sans-serif
+    text-transform: uppercase
+
+    h1
+      font-size: 22px
+      letter-spacing: 0.5em
+      padding-bottom: 50px
+
+    h2
+      font-size: 16px
+      padding-top: 20px
+      padding-bottom: 230px
+
+    .skills-loop
+      font-size: 16px
+
+@media screen and (orientation: landscape)
+  #header
+      .intro
+        padding-top: 50px
+
+@media (min-width: 768px)
+  #header
+
+    .intro
+      padding-top: 400px
+
+      h1
+        font-size: 60px
+
+      h2
+        font-size: 24px
+        display: inline-block
+        margin-bottom: 180px
+
+      .skills-loop
+        font-size: 24px
+        display: inline-block
+        margin-right: 20px
+
+    .navbar
+      padding-top: 0px
+
+      .burger
+        display: none
+
+    .listMenuClose
+      display: inline-block
+      width: 100%
+      text-align: right
+      height: 50px
+      position: fixed
+      background-color: white
+      z-index: 1
+      box-shadow: 1px 0.1px 20px 0.5px #000
+
+    ul
+      height: 0%
+
+      li
+        display: inline-block
+        margin-right: 50px
+        height: 0%
+        padding-top: 20px
+
+        a
+          color: black
+
+    .introMenuOpen
+      display: block
+
+@media (min-width: 1024px)
+  #header
+    ul
+      li
+        margin-right: 100px
